@@ -19,7 +19,6 @@ class _MyHomePageStateState extends State<MyHomePage> {
 
   void _incrementMinus() {
     setState(() {
-   //   $val = $val * -1;
       _counter--;
     });
   }
@@ -28,14 +27,14 @@ class _MyHomePageStateState extends State<MyHomePage> {
 Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-      title: const Text("My increment counter"),
+      title: const Text("My increment counter : Noppanut"),
       ),
       body: Center(
         child: Column(
           children: [
             Text("$_counter"),
-            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add)),
-            ElevatedButton(onPressed: _incrementMinus, child: Icon(Icons.minimize)),
+            ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add,color: Colors.green,)),
+            ElevatedButton(onPressed: _incrementMinus, child: Icon(Icons.minimize,color: Colors.red,)),
           ],
         ),
       ),
