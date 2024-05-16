@@ -19,7 +19,9 @@ class _MyHomePageStateState extends State<MyHomePage> {
 
   void _incrementMinus() {
     setState(() {
-      _counter--;
+      if(_counter != 0 ){
+        _counter--;
+      }
     });
   }
 
